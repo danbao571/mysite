@@ -6,6 +6,16 @@
 {% load like_tags %}
 {% block header_extends %}
     <link rel="stylesheet" href="{% static 'blog/blog.css' %}">
+    <script type="text/javascript">
+        window.onload = function(){
+               let oFind = document.getElementById("xxx");
+               let ovlue = document.getElementById("ccc");
+            oFind.onclick = function(){
+                alert("牛水b正在加急开发该功能，敬请期待！！")
+                ovlue.val("");
+            }
+        }
+    </script>
 {% endblock %}
 
 {# 页面内容 #}
@@ -13,12 +23,19 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
-                <div class="panel panel-default">
-                    <div class="panel-heading">{% block blog_list_title %}博客列表{% endblock %}</div>
+                <div  id="sat" class="panel panel-default">
+                    <div id="set" class="panel-heading">{% block blog_list_title %}博客列表{% endblock %}
+                        <div class="form">
+                            <form action="#" method="">
+                                <input id="ccc" class="txt" type="text" name="" value="">
+                                <input id="xxx" class="btn" type="button" value="搜索">
+                            </form>
+                        </div>
+                    </div>
                     <div class="panel-body">
                         {% for blog in blogs %}
                             <div class="blog">
-                                <h3>
+                                <h3 style="margin-top: 40px;">
                                     <a href="{% url 'blog_detail' blog.pk %}">{{ blog.title }}</a>
                                 </h3>
                                 <p class="blog-info">
