@@ -18,7 +18,7 @@ from .base import *
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = "%s2x-yqlefh8%5r#g@2@*9#@2@5$*l4qwf4)u*-i_z%co-t0ap"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -48,7 +48,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.qq.com'
 EMAIL_POST = 465
 EMAIL_HOST_USER = '1969236660@qq.com'
-EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']  # 'pdcldkcfrtfdefdd'
+EMAIL_HOST_PASSWORD = 'pdcldkcfrtfdefdd'
 EMAIL_SUBJECT_PREFIX = '[刘永杰的博客]'
 EMAIL_USE_SSL = True  # 与smtp服务器通信时，是否启动SSL安全链接
 
