@@ -18,7 +18,7 @@
     <div class="navbar navbar-default" navbar-fixed-top role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="{% url 'home' %}">牛水b个人网站
+                <a class="navbar-brand" href="{% url 'home' %}">刘永杰个人网站
                 </a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=
                         "#navbar-collapse">
@@ -74,6 +74,8 @@
     </div>
 
     {% block content %}{% endblock %}
+
+
     <!-- Modal -->
     <div class="modal fade" id="login_modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-sm" role="document">
@@ -89,7 +91,7 @@
                            <label for="{{ field.id_for_label }}">{{ field.label}}</label>
                            {{ field }}
                        {% endfor %}
-                           <span id="login_medal_tip"class="text-danger"></span>
+                           <span id="login_medal_tip" class="text-danger"></span>
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">登录</button>

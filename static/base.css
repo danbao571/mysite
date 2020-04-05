@@ -1,13 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-
+    position: relative;
 }
 ul {
 	list-style-type: none;
 }
 ul.navbar-right {
     margin-right: 0;
+}
+div.navbar.navbar-default{
+    margin-bottom: 0;
 }
 
 
