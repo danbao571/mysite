@@ -70,13 +70,10 @@ div.like {
 span.active {
 	color: #f22;
 }
-
-
 div#set{
 	height:50px;
-	width:100%;
+	width:auto;
 	float:left;
-
 }
 #set .form{
 	height:50px;
